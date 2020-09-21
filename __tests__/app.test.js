@@ -26,11 +26,10 @@ describe('testing routes', () => {
     expect(response.text).toEqual('<html><body><h1>blue</h1></body></html>');
   });
 
-  it('should test /other routes route', async() => {
+  it('should test /other routes', async() => {
     const response = await request(app)
       .get('/tfgyhj');
 
     expect(response.text).toEqual('<html><body><h1>Not Found</h1></body></html>');
   });
-
 });
